@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmarisTest", "AmarisTest\AmarisTest.csproj", "{2084A25D-368C-4B4E-8B36-8BAEEB176B3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmarisUnitTests", "AmarisUnitTests\AmarisUnitTests.csproj", "{68A3ED44-1608-4E0F-A517-D687B0F8D4F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2084A25D-368C-4B4E-8B36-8BAEEB176B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2084A25D-368C-4B4E-8B36-8BAEEB176B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2084A25D-368C-4B4E-8B36-8BAEEB176B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2084A25D-368C-4B4E-8B36-8BAEEB176B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A3ED44-1608-4E0F-A517-D687B0F8D4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A3ED44-1608-4E0F-A517-D687B0F8D4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A3ED44-1608-4E0F-A517-D687B0F8D4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A3ED44-1608-4E0F-A517-D687B0F8D4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {014A73E4-6631-4CF6-BC0F-9A88ABA4F6E4}
+	EndGlobalSection
+EndGlobal

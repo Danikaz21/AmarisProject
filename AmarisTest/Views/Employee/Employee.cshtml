@@ -1,0 +1,81 @@
+﻿@model IEnumerable<AmarisTest.Models.Entities.Employee>
+@{
+    ViewBag.Title = "Employees";
+}
+@if (ViewData["Message"] != null)
+{
+    <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewData["Message"]");
+            };
+    </script>
+}
+
+<h2>Employees</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Employee Name")
+        </th>
+        <th>
+            @Html.DisplayName("Employee Salary")
+        </th>
+        <th>
+            @Html.DisplayName("Employee Age")
+        </th>
+        <th>
+            @Html.DisplayName("Profile Image")
+        </th>
+        <th>
+            @Html.DisplayName("Employee Anual Salary")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.employee_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employee_salary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employee_age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.profile_image)
+            </td>
+            <td>
+                @{
+                    int anual_salary = item.employee_salary * 12;
+                }
+                @Html.DisplayFor(modelItem => anual_salary)
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    <input class="form-control" id="employeeid" name="EmployeeId" type="text" value="" />
+    <input type="button"
+           value="Search"
+           onclick="changeHref()" />
+</div>
+@section Scripts {
+
+    <script type="text/javascript">
+        function changeHref(){
+            var urlGetEmployee = '@Url.Action("GetEmployee", "Employee")';
+            var urlEmployees = '@Url.Action("Employee", "Employee")';
+            var txtVal = $('#employeeid').val();
+            if (txtVal == "")
+                window.location.href = urlEmployees;
+            else
+                window.location.href = urlGetEmployee + '/?idEmployee=' + txtVal;
+        }
+    </script>
+}
+
